@@ -1,0 +1,20 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020, // Allow the parser to understand ES2020 syntax
+    "sourceType": "module", // Enable modules
+   
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react"],
+  "rules": {
+  "@typescript-eslint/no-explicit-any": "off",  // Turn off the "any" rule
+    "react/no-unescaped-entities": "off",        // Turn off the "unescaped entities" rule
+    "react/jsx-key": "off",                      // Turn off the "missing key" rule
+    "@next/next/no-img-element": "off"   
+  }
+}
